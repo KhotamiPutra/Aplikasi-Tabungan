@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-content {
+  max-width: 400px;
+  width: 100%;
+  height: 450px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.tab {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.tab button {
+  width: 50%;
+  padding: 10px 20px;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tab button.active {
+  background: #007bff;
+  color: #fff;
+}
+.form-section {
+  display: none;
+}
+.form-section.active {
+  display: block;
+}
