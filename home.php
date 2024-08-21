@@ -35,6 +35,7 @@ $result_tabungan = $stmt_tabungan->get_result();
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1000;
 }
 </style>
 </head>
@@ -59,12 +60,13 @@ $result_tabungan = $stmt_tabungan->get_result();
                     </li>
                 </ul>
             </div>
-            <?php echo htmlspecialchars($user['name']); ?>
         </div>
         
     </nav>
 
     <div class="container mt-4">
+        <h3>Hallo, Selamat datang <?php echo htmlspecialchars($user['name']); ?>
+        </h3>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addTabunganModal" id="addTabunganButton">Tambah Tabungan</button>
 
         <?php

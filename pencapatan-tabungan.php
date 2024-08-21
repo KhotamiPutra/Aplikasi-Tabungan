@@ -52,7 +52,6 @@ $result_tabungan = $stmt_tabungan->get_result();
                     </li>
                 </ul>
             </div>
-            <?php echo htmlspecialchars($user['name']); ?>
         </div>
         
     </nav>
